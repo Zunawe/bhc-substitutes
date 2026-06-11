@@ -1,7 +1,8 @@
-Archipelago's BizHawk Client communicates with BizHawk by connecting to a lua
-script that runs in the emulator. The client makes a few BizHawk-specific
-assumptions, but it's possible to make other connectors that pretend to be the
-BizHawk lua script.
+[Archipelago](https://archipelago.gg/)'s BizHawk Client communicates with
+[BizHawk](https://tasvideos.org/Bizhawk) by connecting to a Lua script that
+runs in the emulator. The client makes a few BizHawk-specific assumptions, but
+it's possible to make other connectors that pretend to be the BizHawk Lua
+script.
 
 Each directory in this repository contains instructions and resources for using
 the corresponding emulator.
