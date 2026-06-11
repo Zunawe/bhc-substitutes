@@ -3,7 +3,7 @@
 - **Platforms**: Windows, Mac, Linux
 - **Notes**:
   - Other consoles supported by Mesen could be added.
-- **Instructions**
+- **Instructions**:
   1. Download `connector_bizhawkclient_mesen2.js` either by opening the file in GitHub and clicking the "Download raw file" button or by downloading the repo and extracting the file.
   2. Put the Lua script in `Archipelago/data/lua/`.
   3. Open your ROM in Mesen.
