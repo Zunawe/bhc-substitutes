@@ -166,7 +166,7 @@ local memTypeMap = {
 
 if emu.getMemorySize(emu.memType.nesWorkRam) == 0 then
 	-- BizHawk cores redirect the WRAM domain to SRAM if WRAM isn't used
-	memTypeMap["NES"]["WRAM"] = emu.memType.nesInternalRam
+	memTypeMap["NES"]["WRAM"] = emu.memType.nesSaveRam
 end
 
 local requestHandlers = {
@@ -209,7 +209,7 @@ local requestHandlers = {
 		local res = {}
 
 		res["type"] = "MEMORY_SIZE_RESPONSE"
-		res["value"] = emu.getMemorySize(memType)
+		res["value"] = emu.getMemorySize(memTypeMap[system][req["domain"]])
 
 		return res
 	end,
